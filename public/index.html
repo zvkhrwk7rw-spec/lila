@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лила. Игра самопознания</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="main-screen">
+    <h1>ЛИЛА. Игра самопознания</h1>
+    <h2>Путешествие в глубины сознания</h2>
+    <button id="start-btn">НАЧАТЬ ПУТЬ</button>
+  </div>
+
+  <div id="game-screen" class="hidden">
+    <h2>Ваш путь начат</h2>
+    <button id="roll-btn">Бросить кубик</button>
+    <div id="dice-result"></div>
+  </div>
+
+  <div id="cell-modal" class="modal hidden">
+    <div class="modal-content">
+      <div id="cell-title"></div>
+      <div id="cell-text"></div>
+      <button class="modal-btn" onclick="closeModal()">Продолжить</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
